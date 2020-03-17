@@ -31,10 +31,22 @@ h1,h2,h3,h4,h5,h6 {
 
 /*general*/
 
+h1 {
+	transition: 1.3s;
+}
+.static {
+	position: fixed;
+	top:0;
+	width: 100%;
+	background-color: #fff;
+	padding: 30px 0 20px 0;
+}
+
 .widget-title {
 	margin-top: 30px;
 }
 
 .entry-content img {
-	margin: 50px 0;
+	margin: 50px auto;
+	display: block;
 }
