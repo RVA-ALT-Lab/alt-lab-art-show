@@ -10,8 +10,22 @@ h1,h2,h3,h4,h5,h6 {
 /*header*/
 
 .navbar-brand {
-	font-size: 1.3em;
+	font-size: 2.5em;
 	font-family: 'Heebo', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+.navbar-toggler-icon {
+	background-color: red;
+}
+
+/*general*/
+
+.widget-title {
+	margin-top: 30px;
+}
+
+.entry-content img {
+	margin: 50px 0;
 }
