@@ -17,6 +17,9 @@ h1,h2,h3,h4,h5,h6 {
 	line-height: 1em;
 }
 
+#main-menu {
+	margin-top: 10px;
+}
 
 #main-menu a {
 	font-weight: 500;
@@ -31,11 +34,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*sidebar art*/
-#h-title {
-	
+#h-title {	
     transition: all 2s;   
     border-left: 50px solid $pink;
     padding-left: 10px;
+    line-height: 1em;
 }
 
 .exhibit-desc{
@@ -58,8 +61,9 @@ h1,h2,h3,h4,h5,h6 {
 	margin-top: 30px;
 }
 
-.entry-content img:first-of-type) {
-	margin: 0 auto 50px auto;
+#art-page-wrapper .entry-content img:first-of-type {
+	margin: 0px auto 50px auto;
+	
 	display: block;
 }
 
