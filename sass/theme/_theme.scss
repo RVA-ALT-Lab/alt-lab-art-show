@@ -35,6 +35,8 @@ h1,h2,h3,h4,h5,h6 {
     transition: all 2s;
     position: fixed;
     bottom: 20px;
+    width: 100%;
+    display: block;
 }
 
 
@@ -55,3 +57,13 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 50px auto;
 	display: block;
 }
+
+/*mobile land*/
+
+@media (max-width: 768px) { 
+	#h-title {
+	    position: static;
+	   
+	}
+ }
+
