@@ -20,7 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<div class="col-md-4">
+			<div class="col-md-4 art-sidebar">
 				<header class="entry-header">
 
 					<?php the_title( '<h1 id="h-title" class="entry-title">', '</h1>' ); ?>

@@ -5,6 +5,7 @@ window.onscroll = function() {myFunction()};
 
 // Get the header
 var header = document.getElementById("h-title");
+var phantom = document.getElementById("phantom");
 
 // Get the offset position of the navbar
 var sticky = header.offsetTop;
@@ -12,12 +13,15 @@ var sticky = header.offsetTop;
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset > sticky) {
-    header.classList.add("static");
+    //header.classList.add("static");
+     // phantom.classList.add("show");
      // header.style.position = 'fixed';
      // header.style.top = 0;
      // header.style.width = "100%";
      // header.style.background = '#fff';
   } else {
-    header.classList.remove("static");
+    //header.classList.remove("static");
+    // header.style.position = 'static';
+    //  header.style.top = 'auto';
   }
 }
