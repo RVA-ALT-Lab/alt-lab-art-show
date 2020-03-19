@@ -22,8 +22,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-4 art-sidebar">
 				<header class="entry-header">
-
-					<?php the_title( '<h1 id="h-title" class="entry-title">', '</h1>' ); ?>
+					<div class="exhibit-desc">
+						<?php the_title( '<h1 id="h-title" class="entry-title">', '</h1>' ); ?>
+						<?php the_field('exhibition_description');?>
+					</div>
 
 				</header><!-- .entry-header -->
 			</div>
