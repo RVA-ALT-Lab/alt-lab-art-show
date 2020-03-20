@@ -8,7 +8,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-if ( ! is_active_sidebar( 'right-sidebar' ) ) {
+if ( ! is_active_sidebar( 'left-sidebar' ) ) {
 	return;
 }
 
@@ -17,10 +17,16 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 ?>
 
 <?php if ( 'both' === $sidebar_pos ) : ?>
-	<div class="col-md-3 widget-area" id="right-sidebar" role="complementary">
+	<div class="col-md-3 widget-area" id="left-sidebar" role="complementary">
 <?php else : ?>
-	<div class="col-md-4 widget-area" id="right-sidebar" role="complementary">
-<?php endif; ?>
-<?php dynamic_sidebar( 'right-sidebar' ); ?>
+	<div class="col-md-4 widget-area" id="left-sidebar" role="complementary">
+		<header class="entry-header">
 
-</div><!-- #right-sidebar -->
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+			</header><!-- .entry-header -->
+
+<?php endif; ?>
+<?php dynamic_sidebar( 'left-sidebar' ); ?>
+
+</div><!-- #left-sidebar -->

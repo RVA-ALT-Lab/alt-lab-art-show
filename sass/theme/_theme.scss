@@ -15,8 +15,12 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 700;
 	text-transform: uppercase;
 	white-space: normal;
+	line-height: 1em;
 }
 
+#main-menu {
+	margin-top: 10px;
+}
 
 #main-menu a {
 	font-weight: 500;
@@ -30,24 +34,55 @@ h1,h2,h3,h4,h5,h6 {
 	margin-bottom: 20px;
 }
 
+/*sidebar art*/
+#h-title {	
+    transition: all 2s;   
+    border-left: 50px solid $pink;
+    padding-left: 10px;
+    line-height: 1em;
+}
+
+.exhibit-desc{
+    position: fixed;
+    bottom: 20px;
+    width: 250px;
+    background-color: #fff;
+}
+
 /*general*/
 
-h1 {
-	transition: 1.3s;
-}
+
 .static {
 	position: fixed;
 	top:0;
 	width: 100%;
-	background-color: #fff;
-	padding: 30px 0 20px 0;
 }
 
 .widget-title {
 	margin-top: 30px;
 }
 
-.entry-content img {
+#art-page-wrapper .entry-content img:first-of-type {
+	margin: 0px auto 50px auto;
+	
+	display: block;
+}
+
+.entry-content img{
 	margin: 50px auto;
 	display: block;
 }
+
+#art-page-wrapper {
+	padding:0;
+}
+
+/*mobile land*/
+
+@media (max-width: 768px) { 
+	#h-title {
+	    position: static;
+	    width: 100%;
+	}
+ }
+
