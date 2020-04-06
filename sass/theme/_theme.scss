@@ -41,21 +41,11 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1em;
 }
 
-.exhibit-desc{
-    position: fixed;
-    bottom: 20px;
-    width: 250px;
-    background-color: #fff;
-}
+
 
 /*general*/
 
 
-.static {
-	position: fixed;
-	top:0;
-	width: 100%;
-}
 
 .widget-title {
 	margin-top: 30px;
@@ -78,10 +68,16 @@ h1,h2,h3,h4,h5,h6 {
 
 /*mobile land*/
 
-@media (max-width: 768px) { 
+@media (min-width: 768px) { 
 	#h-title {
 	    position: static;
 	    width: 100%;
 	}
+	.exhibit-desc{
+    position: fixed;
+    bottom: 20px;
+    width: 250px;
+    background-color: #fff;
+}
  }
 
