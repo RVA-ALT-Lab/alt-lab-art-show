@@ -55,7 +55,5 @@ function art_show_acf_settings_show_admin( $show_admin ) {
 function acf_exhibit_description(){
 	if(class_exists('ACF')){
 		return the_field('exhibition_description');
-	} else {
-		return 'Please turn on the Advanced Custom Fields plugin.';
-	}
+	} 
 }
